@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin-top: 100px;
+            background-image: url("madara.jpg");
+            background-size: cover;
+            background-color: rgb(43, 47, 47);
+            color: rgb(176, 194, 209);
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(57, 80, 80);
+            align-items: center;
+            height: 70px;   
+        }
+        .left{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            color: darkorange;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 25px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(67, 197, 197);
+        }
+        nav ul li a:hover{
+            color: chartreuse;
+            font-size: 1.04rem;
+        }
+
+
+        .first{ 
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+        }
+        .first div{
+            width: 25%;
+        }
+        .leftsection{
+            background-color: rgb(106, 161, 161);
+            margin: 35px;
+            height: 540px;
+        }
+        .leftsection img{
+            width: 160%;
+        }
+        .rightsection{
+            display: flexbox;
+            justify-content: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 100px;
+            margin: 35px;
+            padding: 100px;        
+        }
+        .hello{
+            color: chartreuse;
+        }
+        .intro{
+            font-size: 55px;
+            height: 55px;
+        }
+        .intro2{
+            font-size: 55px;
+            height: 150px;
+        }
+        .me{
+            color: aqua;
+        }
+        #element{
+            color: rgb(233, 67, 166);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="first">
+            <div class="leftsection">
+                <img src="Bg.png" alt=" ">
+            </div>
+            <div class="rightsection">
+                <span class="hello">Hello! </span>
+                <div class="intro" style="width: 500px;">I'm <span class="me">Sahil Ambekar</span></div>
+                <div class="intro2" style="width: 500px;">A passionate <div class="pro" style="width: 500px;"><span id="element"></span></div>
+                </div>
+               
+            </div>
+
+        </section>
+        <section>
+            About
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Vid Editor.', 'UI/Ux Designer.','Web Devloper.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
